@@ -2,9 +2,11 @@ const mongoose = require('mongoose');
 const { Schema } = require('mongoose');
 
 const schema = new Schema({
-  name: String,
-  age: Number,
-  hobby: String,
+  logo: String,
+  company_name: String,
+  position: String,
+  placement: String,
+  description: String,
 });
 
-module.exports = mongoose.model('users',schema);
+module.exports = mongoose.model('users', schema);
